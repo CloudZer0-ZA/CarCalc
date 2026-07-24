@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title >Car Affordabilty Calculator - South Africa</title>
+    <meta name="Car affordabiltiy calculator" content="Car affordabiltiy calculator,  based on your estimated monthly payment (installment) including finance interest, the principal amount is calculated. The calculator includes an option for a balloon/residual option. Live Google links are created to South Africa's popular car listing sites!">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+   <link rel="icon" type="image/png" href="/images/calculator.png">
+  </head>
+  <body>
+      
+    <div class="container ">
+      <div class="  py-4 mt-auto border-top">
+      <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+            <img src="images/carcalc.png" class="img-fluid" style="height: 120px; object-fit: cover;"  alt="vehicle finance">
+        <!-- <span class="fs-3 fw-bold text-primary" style="font-variant: small-caps;"">Car Affordability Calculator ZA</span> -->
+      </a> 
+      </div>
+     
+      <div class="row">
+        <a> <img  class="img-fluid w-100" src="images/webuycars.png" alt="We Buy Cars"></a>
+      </div>
+        <div class="row">
+            <div class="col-md-5 ">
+              <br>
+      <p></p>
+      <p class="text-warning fs-4"> With a live <strong>Google</strong> search link for the estimated affordability amount from <strong>current vehicle listings! </strong></p>
+      <hr>
+      <p class="light">To calculate the starting loan principal amount based on a known monthly payment, interest rate, and total number of periods, you must use the present value of an annuity formula.</p>
+      <p>The algebraic formula to find the principal (P) is:</p>
+      <a > <img src="images/formula1.png" alt="car finance"  style="width:220px;"></a><br>
+      <a > <img src="images/formula2.png" alt="car finance"  style="width:300px;"></a>
+     
+      <br>
+      
+      </div>
+             <div class="col-md-1"></div>
+            <div class="col-md-6 justify-content-center align-items-center   ">
+   <p></p><br>
+      <label for="monthly" class="form-label">Estimate your total monthly payment (including interest),  excluding insurance and the once-off on-the-road fees (R).</label>
+  <input type="range" class="form-range" min="1500" max="10000" value="2500" id="monthly">
+  <output for="monthly" id="monthlyRange" aria-hidden="true"></output>
+  <p></p>
+  <label for="months" class="form-label">Select the number of months.</label>
+  <input type="range" class="form-range" min="48" max="84" value="60" id="months" >
+  <output for="months" id="monthsRange" aria-hidden="true"></output>
+   <p></p>
+  <label for="deposit" class="form-label">Select your deposit (R).</label>
+  <input type="range" class="form-range" min="10000" max="100000" value="20000" id="deposit" >
+  <output for="deposit" id="depositRange" aria-hidden="true"></output>
+ <p></p>
+  <label for="interest" class="form-label">Bank Interest (%).</label>
+  <input type="range" class="form-range" min="9" max="20" value="11" id="interest" step="0.5" >
+  <output for="interest" id="interestRange" aria-hidden="true"></output> 
+  <p></p>
+  <label for="balloon" class="form-label">Balloon / Residual amount (R).</label>
+  <input type="range" class="form-range" min="0" max="40000" value="0" id="balloon" >
+  <output for="balloon" id="balloonRange" aria-hidden="true"></output>
+  <h2 class="d-flex justify-content-center align-items-center text-primary">Principal amount</h2>     
+   <h1 id="estimatedValue" class="d-flex justify-content-center align-items-center text-primary">R000 000.00</h1>
+  </div>
+    </div>
+    <Br>
+<div class="row ">
+  <p class="fw-bold text-center fs-5 ">Based on your <span class="bg-primary bg-opacity-50 text-white"> principal amount</span>, see what you can get by following the links to SA's popular car sites!
+  </p>
+    
+</div>
+   <div class="row gy-4">
+
+    <div class="col-2">
+          <div class="card bg-dark text-white">
+            <img class="card-img-top img-fluid" src="images/car_5.png"  alt="car affordabilty">
+          <div class="card-body text-center fw-bold">  <a  id="wbc" href="https://www.webuycars.co.za/buy-a-car?price_min=100000&price_max=500000"  target="_blank" rel="noopener noreferrer" class="btn btn-dark">We Buy Cars</a></div>
+      </div>
+    </div>
+
+      <div class="col-2">
+          <div class="card bg-secondary text-white">
+            <img class="card-img-top img-fluid" src="images/car_1.png" alt="car affordabilty">
+          <div class="card-body text-center fw-bold"><a id="autotrader" href="https://www.autotrader.co.za/cars-for-sale?price=100001-to-500000"  target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Autotrader</a></div>
+      </div>
+    </div>
+
+     <div class="col-2">
+          <div class="card bg-warning text-white">
+          <img class="card-img-top img-fluid" src="images/car_2.png" alt="car affordabilty">
+        <div class="card-body text-center fw-bold"><a id="carscoza" href="https://www.cars.co.za/usedcars/?price_type=listing_price&sort=sort_rank&price_range=100000-249999&P=1" target="_blank" rel="noopener noreferrer" class="btn btn-warning">Cars.co.za</a></div>
+      </div>
+    </div>
+
+      <div class="col-2">
+          <div class="card bg-primary text-white">
+          <img class="card-img-top img-fluid" src="images/car_3.png" alt="car affordabilty">
+        <div class="card-body text-center fw-bold"><a id="gumtree" href="https://www.gumtree.co.za/s-cars-bakkies/v1c9077p1?pr=100000,200000" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Gumtree</a></div>
+      </div>
+    </div>
+
+    <div class="col-2">
+          <div class="card bg-success text-white">
+            <img class="card-img-top img-fluid" src="images/car_4.png" alt="car affordabilty">
+          <div class="card-body text-center fw-bold"><a id="changecars" href="https://www.changecars.co.za/new-or-used-cars-for-sale?price=150000to250000" target="_blank" rel="noopener noreferrer" class="btn btn-success">Change Cars</a></div>
+      </div>  
+    </div>
+
+
+
+  <div class="col-2">
+          <div class="card bg-info text-white">
+          <img class="card-img-top img-fluid" src="images/car_6.png" alt="car affordabilty">
+        <div class="card-body text-center fw-bold"><a id="carfind" href="https://www.carfind.co.za/cars-for-sale/price/100000/200000/sort/price-low-to-high" target="_blank" rel="noopener noreferrer" class="btn btn-info">Car Find</a></div>
+      </div>
+    </div>
+
+    
+    <div class="row gy-4">
+      
+      <div  class="justify-content-center align-items-center">
+        <img src="images/vehiclefinance.png" class="img-fluid w-100"  alt="vehicle finance">
+      </div>
+      <p class="fw-bold text-center fs-5 text-success">Get your vehicles listings or services linked here! or for any other enquiries  - please use the form below. Thank you. </p>
+
+        <form action="https://api.web3forms.com/submit" method="POST" class="form-inline text-center"  id="form">
+          <div class="form-group">
+          <input type="hidden" name="access_key" value="74148256-679a-40fa-9fec-2489a3e0a4dd">
+          <label for="name">Name:</label>
+          <input type="text" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" name="email" required>
+          <label for="message">Message:</label>
+          <input name="message"  required>
+          <button type="submit">Submit Form</button>
+           </div>
+           <div id="result"></div>
+</form>
+      </div>
+
+    </div>
+    
+       
+     </div>
+   <div>
+       <br>
+       <footer class="bg-body-tertiary text-center py-4 mt-auto border-top">
+  <div class="container">
+    <span class="text-body-secondary">&copy; 2026 CloudZer0 ZA. All rights reserved.</span>
+  </div>
+</footer>
+   </div>
+  </body>
+  <script>
+    const currencyFormatter = new Intl.NumberFormat('en-Za', {
+  style: 'currency',
+  currency: 'ZAR',
+  });
+
+  function calculatePrincipal(monthlyPayment, annualRate, months) {
+    // 1. Convert annual percentage rate to a decimal monthly rate
+    const r = annualRate / 12 / 100;
+    
+    // 2. Convert loan term from years to total months
+    const n = months;
+    
+    // 3. Handle zero-interest edge case safely
+    if (r === 0) return monthlyPayment * n;
+    
+    // 4. Apply the present value amortization formula
+    const principal = monthlyPayment * ((1 - Math.pow(1 + r, -n)) / r);
+    
+    // 5. Round safely to two decimal places
+    return Math.round(principal * 100) / 100;
+}
+      const rangeInput = document.getElementById('monthly');
+      const rangeOutput = document.getElementById('monthlyRange');
+      const monthInput = document.getElementById('months');
+      const monthOutput = document.getElementById('monthsRange');
+      const depositInput = document.getElementById('deposit');
+      const depositOutput = document.getElementById('depositRange');
+      const interestInput = document.getElementById('interest');
+      const interestOutput = document.getElementById('interestRange');
+      const balloonInput = document.getElementById('balloon');
+      const balloonOutput = document.getElementById('balloonRange');
+
+  // Set initial value
+  rangeOutput.textContent = rangeInput.value;
+  monthOutput.textContent = monthInput.value;
+  depositOutput.textContent = depositInput.value;
+  interestOutput.textContent = interestInput.value;
+   balloonOutput.textContent = balloonInput.value;
+  localStorage.clear();
+   
+  rangeInput.addEventListener('input', function(e1) {
+    rangeOutput.textContent = this.value;
+    document.getElementById("estimatedValue").textContent = currencyFormatter.format( (calculatePrincipal(rangeOutput.textContent, interestOutput.textContent, monthOutput.textContent )) - Number(depositOutput.textContent)  + Number(balloonOutput.textContent)  );
+    console.log(rangeOutput.textContent, interestOutput.textContent, monthOutput.textContent,depositOutput.textContent,interestOutput.textContent, balloonOutput.textContent);
+    localStorage.clear();
+    localStorage.setItem('principalAmount',  calculatePrincipal(rangeOutput.textContent, interestOutput.textContent, monthOutput.textContent ) - Number(depositOutput.textContent)  + Number(balloonOutput.textContent)) ;
+    localStorage.setItem('webuycarslink',   'https://www.webuycars.co.za/buy-a-car?price_min=' + String(Number(localStorage.getItem('principalAmount')) - 10000) + '&price_max=' + String(Number(localStorage.getItem('principalAmount')) + 10000) );
+    localStorage.setItem('autotraderlink',   'https://www.autotrader.co.za/cars-for-sale?price=' + String(Math.trunc((localStorage.getItem('principalAmount'))) - 10000) + '-to-' + String(Math.trunc((localStorage.getItem('principalAmount'))) + 10000) );
+    localStorage.setItem('carscozalink',   'https://www.cars.co.za/usedcars/?price_type=listing_price&sort=sort_rank&price_range=' + String(Math.trunc((localStorage.getItem('principalAmount'))) - 10000) + '-' + String(Math.trunc((localStorage.getItem('principalAmount'))) + 10000) + '&P1' );
+    localStorage.setItem('changecarslink',   'https://www.changecars.co.za/new-or-used-cars-for-sale?price=' + String(Math.trunc((localStorage.getItem('principalAmount'))) - 10000) + 'to' + String(Math.trunc((localStorage.getItem('principalAmount'))) + 10000)  );
+    localStorage.setItem('carfindlink',   'https://www.carfind.co.za/cars-for-sale/price/' + String(Math.trunc((localStorage.getItem('principalAmount'))) - 10000) + '/' + String(Math.trunc((localStorage.getItem('principalAmount'))) + 10000) + '/sort/price-low-to-high' );
+    localStorage.setItem('gumtreelink',   'https://www.gumtree.co.za/s-cars-bakkies/v1c9077p1?pr=' + String(Math.trunc((localStorage.getItem('principalAmount'))) - 10000) + ',' + String(Math.trunc((localStorage.getItem('principalAmount'))) + 10000));
+
+    const wbcUrl = localStorage.getItem('webuycarslink');
+    document.getElementById('wbc').href = wbcUrl;
+    const autotraderUrl = localStorage.getItem('autotraderlink');
+    document.getElementById('autotrader').href = autotraderUrl;
+     const carscozaUrl = localStorage.getItem('carscozalink');
+    document.getElementById('carscoza').href = carscozaUrl;
+     const changecarsUrl = localStorage.getItem('changecarslink');
+    document.getElementById('changecars').href = changecarsUrl;
+     const carfindUrl = localStorage.getItem('carfindlink');
+    document.getElementById('carfind').href = carfindUrl;
+     const gumtreeUrl = localStorage.getItem('gumtreelink');
+    document.getElementById('gumtree').href = gumtreeUrl;
+
+
+  });
+   monthInput.addEventListener('input', function(e2)  {
+    monthOutput.textContent = this.value;
+      document.getElementById("estimatedValue").textContent = currencyFormatter.format( (calculatePrincipal(rangeOutput.textContent, interestOutput.textContent, monthOutput.textContent)) - Number(depositOutput.textContent)  + Number(balloonOutput.textContent) );
+      console.log(rangeOutput.textContent, interestOutput.textContent, monthOutput.textContent,depositOutput.textContent,interestOutput.textContent, balloonOutput.textContent);
+    localStorage.clear();
+      localStorage.setItem('principalAmount',  calculatePrincipal(rangeOutput.textContent, interestOutput.textContent, monthOutput.textContent ) - Number(depositOutput.textContent)  + Number(balloonOutput.textContent)) ;
+     localStorage.setItem('webuycarslink',   'https://www.webuycars.co.za/buy-a-car?price_min=' + String(Number(localStorage.getItem('principalAmount')) - 10000) + '&price_max=' + String(Number(localStorage.getItem('principalAmount')) + 10000) );
+     localStorage.setItem('autotraderlink',   'https://www.autotrader.co.za/cars-for-sale?price=' + String(Number(localStorage.getItem('principalAmount')) - 10000) + '-to-' + String(Number(localStorage.getItem('principalAmount')) + 10000) );
+     localStorage.setItem('carscozalink',   'https://www.autotrader.co.za/cars-for-sale?price=' + String(Number(localStorage.getItem('principalAmount')) - 10000) + '-to-' + String(Number(localStorage.getItem('principalAmount')) + 10000) );
+     localStorage.setItem('carscozalink',   'https://www.cars.co.za/usedcars/?price_type=listing_price&sort=sort_rank&price_range=' + String(Math.trunc((localStorage.getItem('principalAmount'))) - 10000) + '-' + String(Math.trunc((localStorage.getItem('principalAmount'))) + 10000) + '&P1' );
+ localStorage.setItem('changecarslink',   'https://www.changecars.co.za/new-or-used-cars-for-sale?price=' + String(Math.trunc((localStorage.getItem('principalAmount'))) - 10000) + 'to' + String(Math.trunc((localStorage.getItem('principalAmount'))) + 10000) + '&P1' );
+    localStorage.setItem('carfindlink',   'https://www.carfind.co.za/cars-for-sale/price/' + String(Math.trunc((localStorage.getItem('principalAmount'))) - 10000) + '/' + String(Math.trunc((localStorage.getItem('principalAmount'))) + 10000) + '/sort/price-low-to-high' );
+     localStorage.setItem('gumtreelink',   'https://www.gumtree.co.za/s-cars-bakkies/v1c9077p1?pr=' + String(Math.trunc((localStorage.getItem('principalAmount'))) - 10000) + ',' + String(Math.trunc((localStorage.getItem('principalAmount'))) + 10000) );
+
+    const wbcUrl = localStorage.getItem('webuycarslink');
+    document.getElementById('wbc').href = wbcUrl;
+    const autotraderUrl = localStorage.getItem('autotraderlink');
+    document.getElementById('autotrader').href = autotraderUrl;
+     const carscozaUrl = localStorage.getItem('carscozalink');
+    document.getElementById('carscoza').href = carscozaUrl;
+     const changecarsUrl = localStorage.getItem('changecarslink');
+    document.getElementById('changecars').href = changecarsUrl;
+      const carfindUrl = localStorage.getItem('carfindlink');
+    document.getElementById('carfind').href = carfindUrl;
+  const gumtreeUrl = localStorage.getItem('gumtreelink');
+    document.getElementById('gumtree').href = gumtreeUrl;
+ 
+    
+    });
+
+  depositInput.addEventListener('input', function(e3)  {
+    depositOutput.textContent = this.value;
+     document.getElementById("estimatedValue").textContent = currencyFormatter.format( (calculatePrincipal(rangeOutput.textContent, interestOutput.textContent, monthOutput.textContent)) - Number(depositOutput.textContent)  + Number(balloonOutput.textContent) );
+     console.log(rangeOutput.textContent, interestOutput.textContent, monthOutput.textContent,depositOutput.textContent,interestOutput.textContent, balloonOutput.textContent);
+    localStorage.clear();
+     localStorage.setItem('principalAmount',  calculatePrincipal(rangeOutput.textContent, interestOutput.textContent, monthOutput.textContent ) - Number(depositOutput.textContent)  + Number(balloonOutput.textContent)) ;
+localStorage.setItem('webuycarslink',   'https://www.webuycars.co.za/buy-a-car?price_min=' + String(Number(localStorage.getItem('principalAmount')) - 10000) + '&price_max=' + String(Number(localStorage.getItem('principalAmount')) + 10000) );
+    localStorage.setItem('autotraderlink',   'https://www.autotrader.co.za/cars-for-sale?price=' + String(Number(localStorage.getItem('principalAmount')) - 10000) + '-to-' + String(Number(localStorage.getItem('principalAmount')) + 10000) );
+ localStorage.setItem('carscozalink',   'https://www.cars.co.za/usedcars/?price_type=listing_price&sort=sort_rank&price_range=' + String(Math.trunc((localStorage.getItem('principalAmount'))) - 10000) + '-' + String(Math.trunc((localStorage.getItem('principalAmount'))) + 10000) + '&P1' );
+
+   localStorage.setItem('changecarslink',   'https://www.changecars.co.za/new-or-used-cars-for-sale?price=' + String(Math.trunc((localStorage.getItem('principalAmount'))) - 10000) + 'to' + String(Math.trunc((localStorage.getItem('principalAmount'))) + 10000) + '&P1' );
+    localStorage.setItem('carfindlink',   'https://www.carfind.co.za/cars-for-sale/price/' + String(Math.trunc((localStorage.getItem('principalAmount'))) - 10000) + '/' + String(Math.trunc((localStorage.getItem('principalAmount'))) + 10000) + '/sort/price-low-to-high' );
+    localStorage.setItem('gumtreelink',   'https://www.gumtree.co.za/s-cars-bakkies/v1c9077p1?pr=' + String(Math.trunc((localStorage.getItem('principalAmount'))) - 10000) + ',' + String(Math.trunc((localStorage.getItem('principalAmount'))) + 10000) );
+
+    const wbcUrl = localStorage.getItem('webuycarslink');
+    document.getElementById('wbc').href = wbcUrl;
+    const autotraderUrl = localStorage.getItem('autotraderlink');
+    document.getElementById('autotrader').href = autotraderUrl;
+     const carscozaUrl = localStorage.getItem('carscozalink');
+    document.getElementById('carscoza').href = carscozaUrl;
+     const changecarsUrl = localStorage.getItem('changecarslink');
+    document.getElementById('changecars').href = changecarsUrl;
+      const carfindUrl = localStorage.getItem('carfindlink');
+    document.getElementById('carfind').href = carfindUrl;
+   const gumtreeUrl = localStorage.getItem('gumtreelink');
+    document.getElementById('gumtree').href = gumtreeUrl;
+    });
+
+  interestInput.addEventListener('input', function(e4)  {
+    interestOutput.textContent = this.value;
+     document.getElementById("estimatedValue").textContent = currencyFormatter.format( (calculatePrincipal(rangeOutput.textContent, interestOutput.textContent, monthOutput.textContent)) - Number(depositOutput.textContent)  + Number(balloonOutput.textContent) );
+     console.log(rangeOutput.textContent, interestOutput.textContent, monthOutput.textContent,depositOutput.textContent,interestOutput.textContent, balloonOutput.textContent);
+    localStorage.clear();
+     localStorage.setItem('principalAmount',  calculatePrincipal(rangeOutput.textContent, interestOutput.textContent, monthOutput.textContent ) - Number(depositOutput.textContent)  + Number(balloonOutput.textContent)) ;
+localStorage.setItem('webuycarslink',   'https://www.webuycars.co.za/buy-a-car?price_min=' + String(Number(localStorage.getItem('principalAmount')) - 10000) + '&price_max=' + String(Number(localStorage.getItem('principalAmount')) + 10000) );
+    localStorage.setItem('autotraderlink',   'https://www.autotrader.co.za/cars-for-sale?price=' + String(Number(localStorage.getItem('principalAmount')) - 10000) + '-to-' + String(Number(localStorage.getItem('principalAmount')) + 10000) );
+ localStorage.setItem('carscozalink',   'https://www.cars.co.za/usedcars/?price_type=listing_price&sort=sort_rank&price_range=' + String(Math.trunc((localStorage.getItem('principalAmount'))) - 10000) + '-' + String(Math.trunc((localStorage.getItem('principalAmount'))) + 10000) + '&P1' );
+
+ localStorage.setItem('changecarslink',   'https://www.changecars.co.za/new-or-used-cars-for-sale?price=' + String(Math.trunc((localStorage.getItem('principalAmount'))) - 10000) + 'to' + String(Math.trunc((localStorage.getItem('principalAmount'))) + 10000) + '&P1' );
+    localStorage.setItem('carfindlink',   'https://www.carfind.co.za/cars-for-sale/price/' + String(Math.trunc((localStorage.getItem('principalAmount'))) - 10000) + '/' + String(Math.trunc((localStorage.getItem('principalAmount'))) + 10000) + '/sort/price-low-to-high' );
+    localStorage.setItem('gumtreelink',   'https://www.gumtree.co.za/s-cars-bakkies/v1c9077p1?pr=' + String(Math.trunc((localStorage.getItem('principalAmount'))) - 10000) + ',' + String(Math.trunc((localStorage.getItem('principalAmount'))) + 10000) );
+
+    const wbcUrl = localStorage.getItem('webuycarslink');
+    document.getElementById('wbc').href = wbcUrl;
+    const autotraderUrl = localStorage.getItem('autotraderlink');
+    document.getElementById('autotrader').href = autotraderUrl;
+     const carscozaUrl = localStorage.getItem('carscozalink');
+    document.getElementById('carscoza').href = carscozaUrl;
+     const changecarsUrl = localStorage.getItem('changecarslink');
+    document.getElementById('changecars').href = changecarsUrl;
+      const carfindUrl = localStorage.getItem('carfindlink');
+    document.getElementById('carfind').href = carfindUrl;
+     const gumtreeUrl = localStorage.getItem('gumtreelink');
+    document.getElementById('gumtree').href = gumtreeUrl;
+     
+    });
+   balloonInput.addEventListener('input', function(e5)  {
+    balloonOutput.textContent = this.value;
+      document.getElementById("estimatedValue").textContent = currencyFormatter.format( (calculatePrincipal(rangeOutput.textContent, interestOutput.textContent, monthOutput.textContent)) - Number(depositOutput.textContent)  + Number(balloonOutput.textContent));
+      console.log(rangeOutput.textContent, interestOutput.textContent, monthOutput.textContent,depositOutput.textContent,interestOutput.textContent, balloonOutput.textContent);
+    localStorage.clear();
+      localStorage.setItem('principalAmount',  calculatePrincipal(rangeOutput.textContent, interestOutput.textContent, monthOutput.textContent ) - Number(depositOutput.textContent)  + Number(balloonOutput.textContent)) ;
+      localStorage.setItem('webuycarslink',   'https://www.webuycars.co.za/buy-a-car?price_min=' + String(Number(localStorage.getItem('principalAmount')) - 10000) + '&price_max=' + String(Number(localStorage.getItem('principalAmount')) + 10000) );
+      localStorage.setItem('autotraderlink',   'https://www.autotrader.co.za/cars-for-sale?price=' + String(Number(localStorage.getItem('principalAmount')) - 10000) + '-to-' + String(Number(localStorage.getItem('principalAmount')) + 10000) );
+ localStorage.setItem('carscozalink',   'https://www.cars.co.za/usedcars/?price_type=listing_price&sort=sort_rank&price_range=' + String(Math.trunc((localStorage.getItem('principalAmount'))) - 10000) + '-' + String(Math.trunc((localStorage.getItem('principalAmount'))) + 10000) + '&P1' );
+ localStorage.setItem('changecarslink',   'https://www.changecars.co.za/new-or-used-cars-for-sale?price=' + String(Math.trunc((localStorage.getItem('principalAmount'))) - 10000) + 'to' + String(Math.trunc((localStorage.getItem('principalAmount'))) + 10000) + '&P1' );
+    localStorage.setItem('carfindlink',   'https://www.carfind.co.za/cars-for-sale/price/' + String(Math.trunc((localStorage.getItem('principalAmount'))) - 10000) + '/' + String(Math.trunc((localStorage.getItem('principalAmount'))) + 10000) + '/sort/price-low-to-high' );
+    localStorage.setItem('gumtreelink',   'https://www.gumtree.co.za/s-cars-bakkies/v1c9077p1?pr=' + String(Math.trunc((localStorage.getItem('principalAmount'))) - 10000) + ',' + String(Math.trunc((localStorage.getItem('principalAmount'))) + 10000)) ;
+
+    const wbcUrl = localStorage.getItem('webuycarslink');
+    document.getElementById('wbc').href = wbcUrl;
+    const autotraderUrl = localStorage.getItem('autotraderlink');
+    document.getElementById('autotrader').href = autotraderUrl;
+     const carscozaUrl = localStorage.getItem('carscozalink');
+    document.getElementById('carscoza').href = carscozaUrl;
+     const changecarsUrl = localStorage.getItem('changecarslink');
+    document.getElementById('changecars').href = changecarsUrl;
+      const carfindUrl = localStorage.getItem('carfindlink');
+    document.getElementById('carfind').href = carfindUrl;
+   const gumtreeUrl = localStorage.getItem('gumtreelink');
+    document.getElementById('gumtree').href = gumtreeUrl;
+    });
+
+    
+  </script>
+  <script>
+    const form = document.getElementById('form');
+    const result = document.getElementById('result');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const formData = new FormData(form);
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+  result.innerHTML = "Car Affordability Calculator: Sending. Please wait..."
+
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                result.innerHTML = json.message;
+            } else {
+                console.log(response);
+                result.innerHTML = json.message;
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            result.innerHTML = "Something went wrong!";
+        })
+        .then(function() {
+            form.reset();
+            setTimeout(() => {
+                result.style.display = "none";
+            }, 3000);
+        });
+});
+  </script>
+</html>
