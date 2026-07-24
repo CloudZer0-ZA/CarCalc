@@ -15,3 +15,7 @@ Demo:  https://www.carcalc.co.za
 
 <img width="948" height="527" alt="image" src="https://github.com/user-attachments/assets/71b3c6d1-c97b-4f6b-a7f4-467c92143161" />
 
+## Development Stack
+HTML, Bootstrap, Javascript
+
+
