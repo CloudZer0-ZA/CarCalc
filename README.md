@@ -1,4 +1,4 @@
-# Car Affordabilty Calculator
+# Car Affordability Calculator
 
 To calculate the starting loan principal amount based on a known monthly payment, interest rate, and total number of periods, you must use the present value of an annuity formula.
 
